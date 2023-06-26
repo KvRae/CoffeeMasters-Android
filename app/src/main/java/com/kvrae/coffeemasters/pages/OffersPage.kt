@@ -1,4 +1,4 @@
-package com.kvrae.coffeemasters
+package com.kvrae.coffeemasters.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -14,6 +14,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.kvrae.coffeemasters.R
 import com.kvrae.coffeemasters.ui.theme.Alternative2
 
 
