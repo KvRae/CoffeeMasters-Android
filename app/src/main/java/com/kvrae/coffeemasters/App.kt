@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -13,7 +12,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.kvrae.coffeemasters.pages.InfoPage
+import com.kvrae.coffeemasters.pages.MenuPage
 import com.kvrae.coffeemasters.pages.OffersPage
+import com.kvrae.coffeemasters.pages.OrdersPage
 import com.kvrae.coffeemasters.ui.theme.CoffeeMastersTheme
 import com.kvrae.coffeemasters.ui.theme.NavBar
 import com.kvrae.coffeemasters.ui.theme.Routes
@@ -32,9 +34,9 @@ fun App() {
         },
         content = {
                   when(selectedRoute.value){
-                      Routes.MenuPage.route -> Text(text = "Menu")
-                      Routes.InfoPage.route -> Text(text = "offers")
-                      Routes.OrdersPage.route -> Text(text = "orders")
+                      Routes.MenuPage.route -> MenuPage()
+                      Routes.InfoPage.route -> InfoPage()
+                      Routes.OrdersPage.route -> OrdersPage()
                       Routes.OffersPage.route -> OffersPage()
                   }
         },
